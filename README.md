@@ -1,13 +1,13 @@
 # ByteBuffer
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/bytebuffer/run-tests?label=tests)](https://github.com/kodekeep/bytebuffer/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.now.sh/codecov/c/github/kodekeep/bytebuffer)](https://codecov.io/gh/kodekeep/bytebuffer)
-[![Minimum PHP Version](https://badgen.net/packagist/php/kodekeep/bytebuffer)](https://packagist.org/packages/kodekeep/bytebuffer)
 [![Latest Version](https://badgen.net/packagist/v/kodekeep/bytebuffer)](https://packagist.org/packages/kodekeep/bytebuffer)
+[![Software License](https://badgen.net/packagist/license/kodekeep/bytebuffer)](https://packagist.org/packages/kodekeep/bytebuffer)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/bytebuffer/run-tests?label=tests)](https://github.com/kodekeep/bytebuffer/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/bytebuffer)](https://codeclimate.com/github/kodekeep/bytebuffer)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/bytebuffer)](https://codeclimate.com/github/kodekeep/bytebuffer)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/bytebuffer)](https://packagist.org/packages/kodekeep/bytebuffer)
-[![License](https://badgen.net/packagist/license/kodekeep/bytebuffer)](https://packagist.org/packages/kodekeep/bytebuffer)
 
-> A fast and simple ByteBuffer implementation using SplFixedArray.
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides a fast and simple ByteBuffer implementation using SplFixedArray.
 
 ## Installation
 
@@ -37,6 +37,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+ByteBuffer is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).

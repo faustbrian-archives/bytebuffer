@@ -41,16 +41,6 @@
     "config": {
         "sort-packages": true
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "KodeKeep\\ByteBuffer\\ByteBufferServiceProvider"
-            ],
-            "aliases": {
-                "ByteBuffer": "KodeKeep\\ByteBuffer\\ByteBufferFacade"
-            }
-        }
-    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }

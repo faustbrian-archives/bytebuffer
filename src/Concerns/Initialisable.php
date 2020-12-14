@@ -2,23 +2,21 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <legal@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
  */
 
-namespace KodeKeep\ByteBuffer\Concerns;
+namespace Konceiver\ByteBuffer\Concerns;
 
 use InvalidArgumentException;
 
 /**
  * This is the initialisable trait.
  *
- * @author Brian Faust <hello@basecode.sh>
+ * @author Brian Faust <brian@konceiver.dev>
  */
 trait Initialisable
 {
@@ -27,7 +25,7 @@ trait Initialisable
      *
      * @param string $value
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function fromBinary(string $value): self
     {
@@ -39,7 +37,7 @@ trait Initialisable
      *
      * @param string $value
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function fromHex(string $value): self
     {
@@ -55,7 +53,7 @@ trait Initialisable
      *
      * @param string $value
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function fromUTF8(string $value): self
     {
@@ -67,7 +65,7 @@ trait Initialisable
      *
      * @param string $value
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function fromBase64(string $value): self
     {
@@ -79,7 +77,7 @@ trait Initialisable
      *
      * @param array $value
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function fromArray(array $value): self
     {
@@ -92,7 +90,7 @@ trait Initialisable
      * @param string $value
      * @param string $encoding
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function fromString(string $value, string $encoding): self
     {

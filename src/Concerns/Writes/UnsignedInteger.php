@@ -2,21 +2,19 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <legal@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
  */
 
-namespace KodeKeep\ByteBuffer\Concerns\Writes;
+namespace Konceiver\ByteBuffer\Concerns\Writes;
 
 /**
  * This is the unsigned integer writer trait.
  *
- * @author Brian Faust <hello@basecode.sh>
+ * @author Brian Faust <brian@konceiver.dev>
  */
 trait UnsignedInteger
 {
@@ -26,7 +24,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeUInt8(int $value, int $offset = 0): self
     {
@@ -39,7 +37,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeUInt16(int $value, int $offset = 0): self
     {
@@ -52,7 +50,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeUInt32(int $value, int $offset = 0): self
     {
@@ -65,7 +63,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeUInt64(int $value, int $offset = 0): self
     {
@@ -78,7 +76,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeUByte(int $value, int $offset = 0): self
     {
@@ -91,7 +89,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeUShort(int $value, int $offset = 0): self
     {
@@ -104,7 +102,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeUInt(int $value, int $offset = 0): self
     {
@@ -117,7 +115,7 @@ trait UnsignedInteger
      * @param int $value
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeULong(int $value, int $offset = 0): self
     {

@@ -2,23 +2,21 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <legal@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
  */
 
-namespace KodeKeep\ByteBuffer;
+namespace Konceiver\ByteBuffer;
 
 use InvalidArgumentException;
 
 /**
  * This is the length map class.
  *
- * @author Brian Faust <hello@basecode.sh>
+ * @author Brian Faust <brian@konceiver.dev>
  */
 class LengthMap
 {

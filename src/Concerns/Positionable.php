@@ -2,21 +2,19 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <legal@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
  */
 
-namespace KodeKeep\ByteBuffer\Concerns;
+namespace Konceiver\ByteBuffer\Concerns;
 
 /**
  * This is the positionable trait.
  *
- * @author Brian Faust <hello@basecode.sh>
+ * @author Brian Faust <brian@konceiver.dev>
  */
 trait Positionable
 {
@@ -35,7 +33,7 @@ trait Positionable
      *
      * @param int $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function position(int $offset): self
     {
@@ -49,7 +47,7 @@ trait Positionable
      *
      * @param int $length
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function skip(int $length): self
     {
@@ -63,7 +61,7 @@ trait Positionable
      *
      * @param int $length
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function rewind(int $length): self
     {
@@ -75,7 +73,7 @@ trait Positionable
     /**
      * Resets this ByteBuffers offset.
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function reset(): self
     {
@@ -87,7 +85,7 @@ trait Positionable
     /**
      * Clears this ByteBuffers offsets.
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function clear(): self
     {

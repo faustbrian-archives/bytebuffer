@@ -2,25 +2,23 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <legal@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
  */
 
-namespace KodeKeep\Tests\ByteBuffer\Concerns\Reads;
+namespace Konceiver\Tests\ByteBuffer\Concerns\Reads;
 
-use KodeKeep\ByteBuffer\ByteBuffer;
+use Konceiver\ByteBuffer\ByteBuffer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * This is the integer reader test class.
  *
- * @author Brian Faust <hello@basecode.sh>
- * @covers \KodeKeep\ByteBuffer\Concerns\Reads\Integer
+ * @author Brian Faust <brian@konceiver.dev>
+ * @covers \Konceiver\ByteBuffer\Concerns\Reads\Integer
  */
 class IntegerTest extends TestCase
 {

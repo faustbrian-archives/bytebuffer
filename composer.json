@@ -1,17 +1,17 @@
 {
-    "name": "kodekeep/bytebuffer",
+    "name": "konceiver/bytebuffer",
     "description": "A fast and simple ByteBuffer implementation using SplFixedArray.",
     "keywords": [
-        "kodekeep",
+        "konceiver",
         "bytebuffer"
     ],
-    "homepage": "https://github.com/kodekeep/bytebuffer",
-    "license": "MPL-2.0",
+    "homepage": "https://github.com/konceiver/bytebuffer",
+    "license": "MIT",
     "authors": [
         {
             "name": "Brian Faust",
-            "email": "brian@kodekeep.com",
-            "homepage": "https://kodekeep.com",
+            "email": "brian@konceiver.com",
+            "homepage": "https://konceiver.com",
             "role": "Developer"
         }
     ],
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "KodeKeep\\ByteBuffer\\": "src"
+            "Konceiver\\ByteBuffer\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KodeKeep\\ByteBuffer\\Tests\\": "tests"
+            "Konceiver\\ByteBuffer\\Tests\\": "tests"
         }
     },
     "scripts": {

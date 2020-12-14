@@ -2,23 +2,21 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <info@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that was distributed with this source code.
  */
 
-namespace KodeKeep\ByteBuffer;
+namespace Konceiver\ByteBuffer;
 
 use InvalidArgumentException;
 
 /**
  * This is the byte buffer class.
  *
- * @author Brian Faust <hello@basecode.sh>
+ * @author Brian Faust <brian@konceiver.dev>
  */
 class ByteBuffer
 {
@@ -90,7 +88,7 @@ class ByteBuffer
      *
      * @return mixed
      */
-    public function __get(int $offset)
+    public function __get($offset)
     {
         return $this->offsetGet($offset);
     }
@@ -98,10 +96,10 @@ class ByteBuffer
     /**
      * Dynamically set a value in the buffer.
      *
-     * @param int   $offset
+     * @param int $offset
      * @param mixed $value
      */
-    public function __set(int $offset, $value)
+    public function __set($offset, $value)
     {
         $this->offsetSet($offset, $value);
     }
@@ -113,7 +111,7 @@ class ByteBuffer
      *
      * @return bool
      */
-    public function __isset(int $offset)
+    public function __isset($offset)
     {
         return $this->offsetExists($offset);
     }
@@ -123,7 +121,7 @@ class ByteBuffer
      *
      * @param int $offset
      */
-    public function __unset(int $offset)
+    public function __unset($offset)
     {
         $this->offsetUnset($offset);
     }
@@ -133,7 +131,7 @@ class ByteBuffer
      *
      * @param array|string|int $value
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function new($value): self
     {
@@ -145,7 +143,7 @@ class ByteBuffer
      *
      * @param int $capacity
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function allocate(int $capacity): self
     {
@@ -178,7 +176,7 @@ class ByteBuffer
      * @param string|int $value
      * @param int        $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function pack(string $format, $value, int $offset): self
     {
@@ -229,7 +227,7 @@ class ByteBuffer
      *
      * @param array $buffers
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public static function concat(...$buffers): self
     {
@@ -248,7 +246,7 @@ class ByteBuffer
      * @param mixed $value
      * @param int   $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function append($value, int $offset = 0): self
     {
@@ -272,10 +270,10 @@ class ByteBuffer
     /**
      * Appends this ByteBuffers contents to another ByteBuffer.
      *
-     * @param \KodeKeep\ByteBuffer\ByteBuffer $buffer
+     * @param \Konceiver\ByteBuffer\ByteBuffer $buffer
      * @param int                               $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function appendTo(self $buffer, int $offset = 0): self
     {
@@ -288,7 +286,7 @@ class ByteBuffer
      * @param mixed $value
      * @param int   $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function prepend($value, int $offset = 0): self
     {
@@ -316,10 +314,10 @@ class ByteBuffer
     /**
      * Prepends this ByteBuffers contents to another ByteBuffer.
      *
-     * @param \KodeKeep\ByteBuffer\ByteBuffer $buffer
+     * @param \Konceiver\ByteBuffer\ByteBuffer $buffer
      * @param int                               $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function prependTo(self $buffer, int $offset = 0): self
     {
@@ -332,7 +330,7 @@ class ByteBuffer
      * @param int $length
      * @param int $start
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function fill(int $length, int $start = 0): self
     {
@@ -353,7 +351,7 @@ class ByteBuffer
      * @param int $start
      * @param int $length
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function flip(int $start = 0, int $length = 0): self
     {
@@ -370,7 +368,7 @@ class ByteBuffer
      * @param int $start
      * @param int $length
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function reverse(int $start = 0, int $length = 0): self
     {
@@ -382,7 +380,7 @@ class ByteBuffer
      *
      * @param int $value
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function order(int $value): self
     {
@@ -419,7 +417,7 @@ class ByteBuffer
     /**
      * Determine if the given value is a ByteBuffer.
      *
-     * @param \KodeKeep\ByteBuffer\ByteBuffer $buffer
+     * @param \Konceiver\ByteBuffer\ByteBuffer $buffer
      *
      * @return bool
      */

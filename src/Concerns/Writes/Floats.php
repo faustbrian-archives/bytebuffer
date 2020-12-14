@@ -2,21 +2,19 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <info@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that was distributed with this source code.
  */
 
-namespace KodeKeep\ByteBuffer\Concerns\Writes;
+namespace Konceiver\ByteBuffer\Concerns\Writes;
 
 /**
  * This is the floats writer trait.
  *
- * @author Brian Faust <hello@basecode.sh>
+ * @author Brian Faust <brian@konceiver.dev>
  */
 trait Floats
 {
@@ -26,7 +24,7 @@ trait Floats
      * @param float $value
      * @param int   $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeFloat32(float $value, int $offset = 0): self
     {
@@ -39,7 +37,7 @@ trait Floats
      * @param float $value
      * @param int   $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeFloat64(float $value, int $offset = 0): self
     {
@@ -52,7 +50,7 @@ trait Floats
      * @param float $value
      * @param int   $offset
      *
-     * @return \KodeKeep\ByteBuffer\ByteBuffer
+     * @return \Konceiver\ByteBuffer\ByteBuffer
      */
     public function writeDouble(float $value, int $offset = 0): self
     {

@@ -2,25 +2,23 @@
 
 declare(strict_types=1);
 
-/*
- * This file is part of ByteBuffer.
+/**
+ * Copyright (c) Konceiver Oy <info@konceiver.dev>
  *
- * (c) KodeKeep <hello@kodekeep.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that was distributed with this source code.
  */
 
-namespace KodeKeep\Tests\ByteBuffer\Concerns\Writes;
+namespace Konceiver\Tests\ByteBuffer\Concerns\Writes;
 
-use KodeKeep\ByteBuffer\ByteBuffer;
+use Konceiver\ByteBuffer\ByteBuffer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * This is the integer writer test class.
  *
- * @author Brian Faust <hello@basecode.sh>
- * @covers \KodeKeep\ByteBuffer\Concerns\Writes\Floats
+ * @author Brian Faust <brian@konceiver.dev>
+ * @covers \Konceiver\ByteBuffer\Concerns\Writes\Floats
  */
 class FloatsTest extends TestCase
 {
